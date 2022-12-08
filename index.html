@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="box1">
+        <h1> Food<span class="head">Hunt</span></h1>
+        <button class="btn">login</button>
+        <button class="btn2">cart</button>
+    </div>
+    <div class="cartbox" >
+        <h2 class="cart-head">Your cart</h2>
+        <div class="cart-row">
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-1.png" alt="" >
+                <span class="cart-item-title">Smoki'n Beef Burger</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input1" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-2.png" alt="" >
+                <span class="cart-item-title">Chicken shawarma </span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input2" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-3.jpg" alt="" >
+                <span class="cart-item-title">Chicken Shezwan Noodles</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input3" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-4.jpg" alt="" >
+                <span class="cart-item-title">Chicken Pepperoni Pizza</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input4" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-5.jpg" alt="" >
+                <span class="cart-item-title">Chicken cheese burger</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input5" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-6.jpg" alt="" >
+                <span class="cart-item-title">Mild Naked Chciken Taco</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input6" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-7.jpg" alt="" >
+                <span class="cart-item-title">Spicy Chicken Nuggets</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input7" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-8.jpg" alt="" >
+                <span class="cart-item-title">Golden Steak with French Fries</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input8" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-9.jpg" alt="" >
+                <span class="cart-item-title">Lamb Stuck CheeseBurger</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input9" value="0">
+                <button class="remove">Remove</button>
+            </div>
+            <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-10.jpg" alt="" >
+                <span class="cart-item-title">Chicken Salad</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input10" value="0">
+                <button class="remove">Remove</button>
+            </div> <div class="cart-itemcart-column">
+                <img class="trashimg" src="images/product-11.jpg" alt="" >
+                <span class="cart-item-title">Chicken Fiesta Pizza</span>
+                
+            </div>
+            <div class="cart-quantitycart-column">
+                <input type="number" class="cart-quantity-input11" value="0">
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+    </div>
+    <div class="boxes">
+        <div class="box">
+        <img class="img" src="images/product-1.png" alt="burger">
+        <p>Smoki'n Beef Burger</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"><button onclick="burgerFunction()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹235</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-2.png" alt="shawarma">
+        <p>Chicken shawarma</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button onclick="burgerFunction2()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹150</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-3.jpg" alt="noodles">
+        <p>Chicken Shezwan Noodles</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction3()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹165</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-4.jpg" alt="pizza">
+        <p>Chicken Pepperoni Pizza</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction4()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹299</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-5.jpg" alt="cburger">
+        <p>Chicken cheese burger</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction5()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹220</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-6.jpg" alt="cburger">
+        <p>Mild Naked Chciken Taco</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+       <div class="buttons"> <button button onclick="burgerFunction6()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹165</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <img class="img" src="images/product-7.jpg" alt="cburger">
+        <p>Spicy Chicken Nuggets</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction7()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹260</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-8.jpg" alt="cburger">
+        <p>Golden Steak with French Fries</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction8()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹399</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-9.jpg" alt="cburger">
+        <p>Lamb Stuck CheeseBurger</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹249</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-10.jpg" alt="cburger">
+        <p>Chicken Salad</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction9()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹180</p>
+        </div>
+    </div>
+    <div class="box">
+        <img class="img" src="images/product-11.jpg" alt="cburger">
+        <p>Chicken Fiesta Pizza</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="buttons"> <button button onclick="burgerFunction10()" id="burger1" class="cart">Add to Cart</button>
+            <button class="view">View</button>
+            <p class="price"> ₹375</p>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="foot1">
+        <h1> Food<span class="head">Hunt</span></h1>
+        <div class="icons">
+        <a class="facebook" href=""><img src="images/facebook.png" alt=""></a>
+        <a class="insta" href=""><img src="images/insta.png" alt=""></a>
+        <a class="twitter" href=""><img src="images/twitter.png" alt=""></a>
+        </div>
+        <div class="hrn">
+            <hr>
+            <p class="copy">© Copyright 2020 FoodHunt.</p>
+        </div>
+        
+        </div>
+        <table>
+            <td>
+                <table class="table1"> 
+                <tr>
+                    <td><a href="">About</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Read</a></td>
+                </tr>
+                <tr>
+                 <td><a href="">Create a Business account</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Add your Restaurant</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">sign Up or Register</a></td>
+                </tr>
+            </table>
+
+            </td>
+            <td>
+                <table class="table2">
+                <tr>
+                    <td><a href="">Get Help</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Read FAQ's</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">View all cities</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Restaurants Near Me</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Save on your first Order</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">Language:English</a></td>
+                </tr>
+            
+            </table>
+
+
+            </td>
+        </table> 
+        </div>
+        <div class="cart">
+            <input type="number" value="">
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
